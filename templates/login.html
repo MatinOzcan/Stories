@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="ftco-section contact-section register">
+        <div class="container">
+            <div class="row block-9 justify-content-center">
+                <div class="col-md-6 order-md-last d-flex">
+                    <form action="#" class="bg-light p-5 contact-form">
+                        <a class="navbar-brand center" href="#">Stories<span>.</span></a>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Login" class="btn btn-primary py-3 px-5">
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="">Don't have an account? Sign up</a>
+                        </div>
+			<div class="form-group center">
+                            <a href="#" class="social"><i style="font-size: 3em;" class="fa-brands fa-instagram fa-2xl"></i></a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"/>
+    </svg>
+</div>
+
+
+
+{% endblock %}
