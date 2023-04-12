@@ -3,11 +3,12 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
-
+from .models import User
 # User = get_user_model()
 
 def index(request):
-    return render(request, 'index.html', {})
+    user = User.objects.filter().first()
+    return render(request, 'index.html', {"user": user})
 
 def register(request):
     return render(request, 'register.html', {})
